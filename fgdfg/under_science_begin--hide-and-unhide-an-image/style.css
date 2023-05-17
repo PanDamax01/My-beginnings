@@ -1,0 +1,68 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	background-color: #333;
+	font-family: 'Poppins', sans-serif;
+}
+
+.item {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	background-size: cover;
+	transition: 0.4s; /* odpowiada za predkosc przesylu szczałki */
+}
+
+.item1 {
+	height: 40px;
+	background-image: url('https://pixabay.com/get/g64f0662aff392e394009a2cc4cab548e365491ea2d10055a13bd2c17f94a224dd33cf1477abe9516d64a81f8ca26e33c2d318abb47e4e68341d709f17155b82ef6238032ddd3af0bd08d1663fa0fd389_1280.jpg');
+}
+
+.item2 {
+	height: 300px;
+	background-image: url('https://cdn.pixabay.com/photo/2019/06/07/10/44/sunset-4257963_960_720.jpg');
+	background-position: center;
+}
+
+.hide {
+	height: 300px;
+}
+
+.background {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.2);
+}
+
+section {
+	display: flex;
+	justify-content: center;
+	margin-top: 50px;
+}
+
+button {
+	margin: 0 30px;
+	padding: 10px 30px;
+	background: none;
+	border: 2px solid #00cfff;
+	border-radius: 5px;
+	color: #00cfff;
+	font-size: 36px;
+	cursor: pointer;
+	transition: color 0.3s, box-shadow 0.3s;
+	box-shadow: 3px 3px 10px #00cfff;
+}
+
+button:hover {
+	color: #00ffae;
+	box-shadow: 3px 3px 10px #00ffae;
+}
+
+.fas {
+	transition: transform 0.6s;
+}
